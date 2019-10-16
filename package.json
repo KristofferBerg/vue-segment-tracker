@@ -1,0 +1,107 @@
+{
+  "_args": [
+    [
+      "vue-segment-tracker@0.2.2",
+      "/var/www/html/brandapp2/app"
+    ]
+  ],
+  "_from": "vue-segment-tracker@0.2.2",
+  "_id": "vue-segment-tracker@0.2.2",
+  "_inBundle": false,
+  "_integrity": "sha512-anNCqjemvxhQbN9YjwVhJZcqOc4oekMw8C448GQpShSQ0TmrOb0lzvnrf6KaagJ9WKZqzNBI9JtTCO0PBkct3w==",
+  "_location": "/vue-segment-tracker",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "vue-segment-tracker@0.2.2",
+    "name": "vue-segment-tracker",
+    "escapedName": "vue-segment-tracker",
+    "rawSpec": "0.2.2",
+    "saveSpec": null,
+    "fetchSpec": "0.2.2"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/vue-segment-tracker/-/vue-segment-tracker-0.2.2.tgz",
+  "_spec": "0.2.2",
+  "_where": "/var/www/html/brandapp2/app",
+  "author": {
+    "name": "higher.vnf@gmail.com"
+  },
+  "dependencies": {},
+  "description": "Vue wrapper for segment, adds mixins and directives to send events to segment",
+  "devDependencies": {
+    "@vue/test-utils": "^1.0.0-beta.25",
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "babel-helper-vue-jsx-merge-props": "^2.0.3",
+    "babel-plugin-syntax-flow": "^6.18.0",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-plugin-syntax-object-rest-spread": "^6.13.0",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-vue-jsx": "^3.7.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-vue": "^2.0.2",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-config-vue": "^2.0.2",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-flowtype-errors": "^3.6.0",
+    "eslint-plugin-html": "^5.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "eslint-plugin-vue": "^4.5.0",
+    "flow-bin": "^0.86.0",
+    "jest": "^23.6.0",
+    "parcel-bundler": "^1.10.3",
+    "vue": "^2.5.17",
+    "vue-eslint-parser": "^2.0.3",
+    "vue-jest": "^3.0.0",
+    "vue-template-compiler": "^2.5.17",
+    "vuex": "^3.0.1"
+  },
+  "files": [
+    "lib"
+  ],
+  "jest": {
+    "coverageDirectory": "./test/coverage/",
+    "collectCoverageFrom": [
+      "./src/**",
+      "!**/node_modules/**",
+      "!**/vendor/**"
+    ],
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.vue$": "vue-jest"
+    },
+    "setupFiles": [
+      "<rootDir>/browserMock.js"
+    ],
+    "testURL": "http://localhost",
+    "moduleNameMapper": {
+      "^@/(.*)": "<rootDir>/src/$1",
+      "\\.(css|less|scss|sass)$": "identity-obj-proxy"
+    }
+  },
+  "license": "MIT",
+  "main": "lib/index.js",
+  "name": "vue-segment-tracker",
+  "scripts": {
+    "build": "./build.sh",
+    "lint": "eslint --ext .js,.vue src test",
+    "playground": "yarn parcel serve playground/index.html",
+    "prebuild": "yarn test",
+    "prepublishOnly": "yarn build",
+    "pretest": "yarn lint",
+    "test": "jest ./test"
+  },
+  "version": "0.2.2"
+}
